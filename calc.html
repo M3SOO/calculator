@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/css/calc.css">
+</head>
+<body>
+    
+    <section class="m-5 d-flex justify-content-center">
+        <table >
+            <tbody>
+                <tr >
+                    <td colspan="4"><input type="text" name="Total" id="Total" class="p-3" readonly></td>
+                </tr>
+                <tr>
+                    <td><input type="button" onclick="appendToDisplay('/')" class="btn btn-dark" value="/" id="division"></td>
+                    <td><input type="button" onclick="appendToDisplay('*')" class="btn btn-dark" value="*" id="multiply"></td>
+                    <td><input type="button" onclick="appendToDisplay('-')" class="btn btn-dark" value="-" id="sub"></td>
+                    <td><input type="button" onclick="appendToDisplay('+')" class="btn btn-dark" value="+" id="sum"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" onclick="appendToDisplay('7')" class="btn btn-dark" value="7" id="seven"></td>
+                    <td><input type="button" onclick="appendToDisplay('8')" class="btn btn-dark" value="8" id="eight"></td>
+                    <td><input type="button" onclick="appendToDisplay('9')" class="btn btn-dark" value="9" id="nine"></td>
+                    <td><input type="button" onclick="appendToDisplay('.')" class="btn btn-dark" value="." id="dote"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" onclick="appendToDisplay('4')" class="btn btn-dark" value="4" id="four"></td>
+                    <td><input type="button" onclick="appendToDisplay('5')" class="btn btn-dark" value="5" id="five"></td>
+                    <td><input type="button" onclick="appendToDisplay('6')" class="btn btn-dark" value="6" id="six"></td>
+                    <td><input type="button" onclick="clearDisplay()" class="btn btn-dark" value="C" id="clear"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" onclick="appendToDisplay('1')" class="btn btn-dark" value="1" id="one"></td>
+                    <td><input type="button" onclick="appendToDisplay('2')" class="btn btn-dark" value="2" id="two"></td>
+                    <td><input type="button" onclick="appendToDisplay('3')" class="btn btn-dark" value="3" id="three"></td>
+                    <td><input type="button" onclick="appendToDisplay('0')" class="btn btn-dark" value="0" id="zero"></td>
+                </tr>
+                <tr>
+                    <td colspan="4"><input type="button" onclick="equalToDisplay()" class="btn btn-dark" value="=" id="equal"></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <script src="./style/js/bootstrap.bundle.min.js"></script>
+    <script src="./style/js/clac.js"></script>
+</body>
+</html>
